@@ -1,0 +1,11 @@
+[{
+  "modid": "javalearn",
+  "name": "IT RAT - Java learn",
+  "description": "Учебная модификация созданная на видеоуроках",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "logoFile": "",
+  "url": "https://www.youtube.com/channel/UCOHvomt54ZaaSCr3BUVr9BA",
+  "authorList": ["IT RAT"],
+  "credits": "Подписывайтесь на мой Ютуб канал!"
+}]

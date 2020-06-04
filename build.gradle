@@ -1,0 +1,77 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            url = "http://files.minecraftforge.net/maven"
+        }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+    }
+}
+
+apply plugin: 'net.minecraftforge.gradle.forge'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+version = "0.0.1" //Версия мода
+group = "ru.itrat.javalearn" //Обычно в стиле домен.автор.идентификатор_модификации
+archivesBaseName = "javalearn" //Без пробелов и только в нижнем регистре
+
+sourceCompatibility = targetCompatibility = '1.8'
+compileJava {
+    sourceCompatibility = targetCompatibility = '1.8'
+}
+
+minecraft {
+    version = '1.12.2-14.23.5.2847'
+    mappings = 'stable_39'
+    runDir = 'run'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    //Java unit tests
+    testImplementation('org.junit.jupiter:junit-jupiter-api:5.4.2')
+    testRuntime('org.junit.jupiter:junit-jupiter-engine:5.4.2')
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+processResources {
+
+    inputs.property "0.1", project.version
+    inputs.property "1.12.2", project.minecraft.version
+
+    from(sourceSets.main.resources.srcDirs) {
+
+        include 'mcmod.info'
+        expand 'version':project.version, 'mcversion':project.minecraft.version
+
+    }
+
+    from(sourceSets.main.resources.srcDirs) {
+
+        exclude 'mcmod.info'
+
+    }
+
+}
+
+runClient {
+
+    args "--username=IT_Rat"
+    jvmArgs "-Xms2G", "-Xmx2G", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseG1GC", "-XX:G1NewSizePercent=20", "-XX:G1ReservePercent=20", "-XX:MaxGCPauseMillis=50", "-XX:G1HeapRegionSize=32M"
+
+}
+
+test {
+    useJUnitPlatform()
+}
+
+
+
+
