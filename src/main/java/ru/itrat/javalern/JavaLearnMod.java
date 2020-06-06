@@ -20,6 +20,7 @@ public class JavaLearnMod {
 	   BlockRegistrator.registerBlocksRender();
 	}
 
+
 	
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {

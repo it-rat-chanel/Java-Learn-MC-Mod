@@ -16,7 +16,5 @@ public class MyStone extends Block{
 	    this.setHarvestLevel("pickaxe", 1); //К примеру pickaxe и 0 как деревянная кирка
 	    this.setRegistryName(name); //Используется для подключения моделей и в команде /give
 		this.setTranslationKey(name);
-		
 	}
-
 }

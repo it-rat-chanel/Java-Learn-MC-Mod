@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "javalearn:blocks/iron_lucky_block"
+  }
+}

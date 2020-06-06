@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+  
+    "pattern":
+    [
+      "G G",
+      "   ",
+      "G G"
+    ],
+  
+    "key":
+    {
+      "G":
+      {
+        "item": "minecraft:iron_block"
+      }
+    },
+  
+    "result":
+    {
+      "item": "javalearn:iron_lucky_block",
+      "count": 1
+    }
+  }

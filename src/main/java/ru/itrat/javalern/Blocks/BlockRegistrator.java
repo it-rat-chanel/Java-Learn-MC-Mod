@@ -13,10 +13,16 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class BlockRegistrator {
 	
 	private static Block myStone = new MyStone("my_stone", Material.ROCK);
+	private static Block goldLuckyBlock = new GoldLuckyBlock("gold_lucky_block", Material.IRON);
+	private static Block ironLuckyBlock = new IronLuckyBlock("iron_lucky_block", Material.IRON);
+	private static Block diamondLuckyBlock = new DiamondLuckyBlock("diamond_lucky_block", Material.IRON);
 	
 	 public static void registerBlocks() {
 
 	        setRegister(myStone);
+	        setRegister(goldLuckyBlock);
+	        setRegister(diamondLuckyBlock);
+	        setRegister(ironLuckyBlock);
 
 	    }
 
@@ -24,6 +30,9 @@ public class BlockRegistrator {
 	    public static void registerBlocksRender() {
 
 	        setRender(myStone);
+	        setRender(goldLuckyBlock);
+	        setRender(diamondLuckyBlock);
+	        setRender(ironLuckyBlock);
 
 	    }
 

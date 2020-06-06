@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "normal": { "model": "javalearn:diamond_lucky_block" }
+  }
+}
