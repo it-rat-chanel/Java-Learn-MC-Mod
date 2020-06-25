@@ -16,6 +16,12 @@ public class BlockRegistrator {
 	private static Block goldLuckyBlock = new GoldLuckyBlock("gold_lucky_block", Material.IRON);
 	private static Block ironLuckyBlock = new IronLuckyBlock("iron_lucky_block", Material.IRON);
 	private static Block diamondLuckyBlock = new DiamondLuckyBlock("diamond_lucky_block", Material.IRON);
+	private static Block nephritisOre = new NephritisOre("nephritis_ore", Material.ROCK);
+	
+	
+	public static Block getNephritisOre() {
+		return nephritisOre;
+	}
 	
 	 public static void registerBlocks() {
 
@@ -23,6 +29,7 @@ public class BlockRegistrator {
 	        setRegister(goldLuckyBlock);
 	        setRegister(diamondLuckyBlock);
 	        setRegister(ironLuckyBlock);
+	        setRegister(nephritisOre);
 
 	    }
 
@@ -33,6 +40,7 @@ public class BlockRegistrator {
 	        setRender(goldLuckyBlock);
 	        setRender(diamondLuckyBlock);
 	        setRender(ironLuckyBlock);
+	        setRender(nephritisOre);
 
 	    }
 

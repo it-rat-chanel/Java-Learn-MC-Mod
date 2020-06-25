@@ -3,3 +3,5 @@ tile.my_stone.name=Мой камень
 tile.gold_lucky_block.name=Золотой блок удачи
 tile.iron_lucky_block.name=Железный блок удачи
 tile.diamond_lucky_block.name=Алмазный блок удачи
+tile.nephritis_ore.name=Нефритовая руда
+item.nephritis.name=Нефрит
