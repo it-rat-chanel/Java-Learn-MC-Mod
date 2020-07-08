@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "NN ",
+    " O ",
+    " O "
+  ],
+
+  "key":
+  {
+    "N":
+    {
+      "item": "javalearn:nephritis"
+    },
+    "O":
+    {
+      "item": "javalearn:obsidian_stick"
+    }
+  },
+
+  "result":
+  {
+    "item": "javalearn:nephritis_hoe",
+    "count": 1
+  }
+}

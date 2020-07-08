@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+
+  "pattern":
+  [
+    "   ",
+    " O ",
+    " O "
+  ],
+
+  "key":
+  {
+    "O":
+    {
+      "item": "minecraft:obsidian"
+    }
+  },
+
+  "result":
+  {
+    "item": "javalearn:obsidian_stick",
+    "count": 3
+  }
+}
